@@ -92,12 +92,12 @@ If you want to try or develop your application against opencv 2.4.10 and also tr
 your biicode.conf file, simply alternating track in your requirements
 
 	[requirements]
-		 diego/opencv: 0
+		 diego/opencv: 2
 
 replace with:
 
 	[requirements]
-		 diego/opencv(beta): 0
+		 diego/opencv(beta): 2
 
 Note that the first time you switch to 3.0-beta, it will also take a while to download and build the 3.0-beta release.
 From that point you can easily change forth and back between versions, just modifying your biicode.conf requirements.
