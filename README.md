@@ -1,3 +1,4 @@
+[![Build Status](https://webapi.biicode.com/v1/badges/diego/diego/opencvex/master)](https://www.biicode.com/diego/opencvex) 
 
 # Getting started with OpenCV and biicode
 
@@ -12,22 +13,31 @@ with biicode is always exactly the same in any platform: Win, Linux, Mac.
 
 These hooks will download, build if necessary and configure OpenCV in order to make it available for your projects.
 
-After downloading and installing biicode, run:
+After downloading and installing biicode, run the following for getting the examples from biicode:
 
 	$ bii init mycvproject
 	$ cd mycvproject
 	$ bii open diego/opencvex
-	$ bii cpp:configure
+
+You can also start cloning this repo:
+
+	$ git clone https://github.com/drodri/opencv-getting-started.git
+	$ cd opencv-getting-started
+	$ bii init -L
+
+Then:
+
+	$ bii configure
 
 If in windows you should use VS 12 or other VS instead.
 
-	$ bii cpp:configure -G "Visual Studio 12" 
+	$ bii configure -G "Visual Studio 12" 
 
 Then we can build the project. Note that this can take a while, until it downloads and builds OpenCV. Note, however,
 that this is done only once in your machine, in your "user/.biicode" folder. If the opencv installation process fails,
 you might simply want to go there, delete opencv files inside "user/.biicode" and repeat. 
 
-	$ bii cpp:build
+	$ bii build
 
 Your binaries are located inside the bin folder:
 
@@ -47,15 +57,10 @@ Your binaries are located inside the bin folder:
 In the previous step, an existing biicode block with examples was opened in order to get started.
 To start from scratch your own application, you should do the following:
 
-	$ bii init mycvproject
+	$ bii init mycvproject -L
 	$ cd mycvproject
 
-The nex line just create a myuser/myblock folder inside "blocks" with a simple "Hello World" main.cpp
-inside it. You can also do it by hand
-
-	$ bii new myuser/myblock --hello=cpp  
-
-Now replace your main.cpp contents inside blocks/myuser/myblock with your app code. Put the includes as:
+Now you can just write a main.cpp file in this folder and #include OpenCV as:
 
 	#include "diego/opencv/opencv/cv.h"
 
@@ -71,7 +76,7 @@ Now, you can just configure and build your project as described above.
 
 If you want simpler #include directives, you can configure it in your biicode.conf file. Let your includes be:
 
-	#include "diego/opencv/opencv/cv.h"
+	#include "opencv/cv.h"
 
 And then just write in your biicode.conf:
 
