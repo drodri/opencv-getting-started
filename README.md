@@ -44,13 +44,13 @@ Your binaries are located inside the bin folder:
 	$ cd bin
 	$ ./diego_opencvex_main
 
-![BiiCV](https://webapi.biicode.com/v1/raw/diego/diego/opencvex/master/0/biiapp.png)
+![BiiCV](https://raw.githubusercontent.com/drodri/opencv-getting-started/master/biiapp.png)
 
 
 	$ ./diego_opencvex_mainfaces
 
 
-![BiiCV](https://webapi.biicode.com/v1/raw/diego/diego/opencvex/master/0/lena.png)
+![BiiCV](https://raw.githubusercontent.com/drodri/opencv-getting-started/master/lena.png)
 
 ## Developing your own application
 
